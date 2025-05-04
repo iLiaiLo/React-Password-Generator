@@ -2,11 +2,13 @@
 
 const UpperCaseCheck = ({formData,setFormData}) => {
   return (
-    <div>
-        <label>inclue uppercase letter</label>
+    <div className="flex gap-2 ml-1.5">
         <input type="checkbox"
-        value={formData.upperCase}
+        id="upperCase"
+        className="scale-200"
+        checked={formData.upperCase}
         onChange={(e)=>setFormData({...formData,upperCase:e.target.checked})} />
+        <label htmlFor="upperCase" className="hover:underline cursor-pointer">Inclue uppercase letter</label>
     </div>
   )
 }
