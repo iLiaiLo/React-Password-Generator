@@ -16,7 +16,6 @@ import CopyButton from "./formElements/copyButton/CopyButton.jsx";
 
 import UseFormSubmit from "./controllers/submitController/UseFormSubmit.js";
 import UseToggle from "./controllers/toggleController/UseToggle.js";
-import Loader from "./loader/Loader.jsx";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -90,7 +89,6 @@ function App() {
           displayButton={displayButton}
           setDisplayButton={setDisplayButton}
         />
-        <Loader loading={loading} />
       </section>
       <ToastContainer
         position="top-center"
